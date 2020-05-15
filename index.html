@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/71e13a3cd0.js" crossorigin="anonymous"></script>
+  <title>Arora</title>
+</head>
+
+<body>
+  <header>
+    <div class="hero-container clearfix">
+      <nav>
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <ul class="nav-menu clearfix">
+          <li><a href="#home-anchor">home</a></li>
+          <li><a href="#about-anchor">about</a></li>
+          <li><a href="#blog-anchor">blog</a></li>
+          <li><a href="#contact-anchor">contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-image">
+        <!-- <picture>
+          <source media="(max-width: 768px)" srcset="./assets/optimizedImages/mobile-header.jpg">
+          <img src="./assets/optimizedImages/desktop-header.jpg"
+            alt="elegantly dressed woman in a black dress, showcasing a gold Arora necklace" style="width:auto;">
+        </picture> -->
+      </div>
+      <div class="hero-text">
+        <h1>-aro-ra</h1>
+        <h2>jewelers</h2>
+      </div>
+    </div>
+  </header>
+
+
+  <div id="about-anchor" class="about">
+    <div class="wrapper">
+      <img src="./assets/images/image-6@2x.png" alt="A master at work">
+      <h3>handcrafted</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tenetur vitae eaque assumenda facere,
+        molestias accusamus, error sapiente a consequuntur odit deserunt consectetur recusandae animi provident! Sit
+        animi architecto minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex maiores doloribus
+        dolore. Explicabo porro obcaecati totam eius, vero similique dolorem enim earum nulla natus quod!
+        consequatur deleniti aliquid facere repellat? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Reiciendis nulla provident iste tempore minus neque sit, unde aliquam laborum reprehenderit eveniet
+        accusantium amet sunt! Magni ad consequuntur repudiandae quis cupiditate?
+      </p>
+      <a href="#" class="read-more">read more</a>
+    </div>
+  </div>
+
+  <section class="gallery-background">
+    <div class="wrapper">
+      <div class="gallery clearfix">
+        <h3>latest collection</h3>
+        <picture>
+          <source media="(max-width: 768px)" srcset="./assets/optimizedImages/mobile-collections-1.png">
+          <img src="./assets/optimizedImages/desktop-collections-1.png"
+            alt="A close-up of Arora's reclaimed necklace line">
+        </picture>
+        <picture>
+          <source media="(max-width: 768px)" srcset="./assets/optimizedImages/mobile-collections-2.png">
+          <img src="./assets/optimizedImages/desktop-collections-2.png"
+            alt="Two gold rings, intertwined, with inscriptions on the inside">
+        </picture>
+        <picture>
+          <!-- the following 'mobile' file does not link to anything -->
+          <!-- it is a placeholder to allow <picture> to operate correctly -->
+          <source media="(max-width: 768px)" srcset="./assets/optimizedImages/mobile-collections-3.jpg">
+          <img src="./assets/optimizedImages/desktop-collections-3.jpg" alt="">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <div class="documents">
+    <div class="catalogue doc">
+      <i class="far fa-images"></i>
+      <h4>catalogue</h4>
+    </div>
+    <div class="events doc">
+      <i class="far fa-calendar-alt"></i>
+      <h4>events</h4>
+    </div>
+    <div class="collaborations doc">
+      <i class="fas fa-handshake"></i>
+      <h4>collaborations</h4>
+    </div>
+  </div>
+
+  <div id="blog-anchor" class="blog">
+    <div class="blog-item-1">
+      <img src="./assets/optimizedImages/mobile-blog-1.png" alt="Arora triple necklace shimmering in the sun">
+      <div class="wrapper">
+        <h3>sustainable materials</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ex, tempore veritatis cupiditate temporibus
+          ullam eum corporis explicabo, quod consequatur odit ipsa voluptate eveniet quas ducimus. Facere distinctio
+          beatae aperiam eligendi iusto, veniam eum suscipit expedita, autem, quidem optio odit.
+        </p>
+        <a href="#" class="read-more">read more</a>
+      </div>
+    </div>
+
+    <div class="blog-item-2">
+      <img src="./assets/optimizedImages/mobile-blog-2.png" alt="Arora custom silver rings and bracelet">
+      <div class="wrapper">
+        <h3>mix & match</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ex, tempore veritatis cupiditate
+          temporibus
+          ullam eum corporis explicabo, quod consequatur odit ipsa voluptate eveniet quas ducimus. Facere
+          distinctio
+          beatae aperiam eligendi iusto, veniam eum suscipit expedita, autem, quidem optio odit.
+        </p>
+        <a href="#" class="read-more">read more</a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer>
+    <div class="wrapper">
+      <nav>
+        <ul class="footer-menu clearfix">
+          <li><a href="#home-anchor">home</a></li>
+          <li><a href="#about-anchor">about</a></li>
+          <li><a href="#blog-anchor">blog</a></li>
+          <li><a href="#contact-anchor">contact</a></li>
+        </ul>
+      </nav>
+      <div class="subscribe">
+        <h6>stay updated</h6>
+        <p>Subscribe to our newsletter to stay updated.</p>
+
+        <form action="#" method="#" class="myForm" name="myForm" autocomplete="off">
+          <label for="email"></label>
+          <input type="email" id="email" placeholder="email address">
+        </form>
+        <a class="submit" href="">subscribe</a>
+      </div>
+      <div class="contact">
+        <h6>contact</h6>
+        <p>info@email.com | 123-456-7890</p>
+        <p>123 some road, Toronto, ON</p>
+        <p>A5A 5A5, Canada</p>
+      </div>
+    </div>
+    <p>Coyright &copy; 2019 HackerYou</p>
+  </footer>
+
+</body>
+
+</html>

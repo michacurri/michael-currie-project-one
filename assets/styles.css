@@ -1,0 +1,620 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  margin: 0
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0
+}
+
+figcaption,
+figure,
+main {
+  display: block
+}
+
+figure {
+  margin: 1em 40px
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted
+}
+
+b,
+strong {
+  font-weight: inherit
+}
+
+b,
+strong {
+  font-weight: bolder
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+dfn {
+  font-style: italic
+}
+
+mark {
+  background-color: #ff0;
+  color: #000
+}
+
+small {
+  font-size: 80%
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+
+sub {
+  bottom: -.25em
+}
+
+sup {
+  top: -.5em
+}
+
+audio,
+video {
+  display: inline-block
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+
+img {
+  border-style: none
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0
+}
+
+button,
+input {
+  overflow: visible
+}
+
+button,
+select {
+  text-transform: none
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+fieldset {
+  padding: .35em .75em .625em
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline
+}
+
+textarea {
+  overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+details,
+menu {
+  display: block
+}
+
+summary {
+  display: list-item
+}
+
+canvas {
+  display: inline-block
+}
+
+template {
+  display: none
+}
+
+[hidden] {
+  display: none
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* 
+//
+end of setup 
+//
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+head,
+body,
+header,
+nav,
+section,
+footer,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+//
+fonts - in order of appearance; mostly
+//
+*/
+
+nav ul {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.9rem;
+}
+
+
+/* Hero */
+h1 {
+  font-family: 'Italiana', serif;
+  font-size: 6.5rem;
+  line-height: 5.5rem;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+/* Hero subheading - Jewelers */
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 2.0rem;
+  line-height: 1.5rem;
+  color: #FABA63;
+  text-transform: capitalize;
+  text-align: right;
+}
+
+/* About - Handcrafted, Latest Collection */
+h3 {
+  font-family: 'Italiana', serif;
+  text-transform: uppercase;
+  font-size: 3.0rem;
+  line-height: 5rem;
+  padding: 10% 0;
+  text-align: center;
+}
+
+/* Documents - Catalogue, Events, Collaborations */
+h4 {
+  font-family: 'Italiana', serif;
+  font-size: 3.0rem;
+}
+
+/* Buttons - Read More */
+h5 {
+  font-family: 'Italiana', serif;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+}
+
+/* Footer Headings - Stay Updated, Contact */
+h6 {
+  font-family: 'Italiana', serif;
+  font-size: 2.5rem;
+}
+
+/* body & paragraphs */
+body, a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 2.0rem;
+  line-height: 2.9rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* END of FONTS */
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 
+//
+end of settings
+//
+*/
+
+body {
+  background: #14171f;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 525px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-container {
+  background-image: url(./optimizedImages/mobile-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* NAV BEGINNING */
+#hamburger {
+  display: none;
+}
+
+nav label {
+  color: white;
+  font-size: 4rem;
+  float: right;
+  padding: 5%;
+}
+
+.nav-menu {
+  display: block;
+  background: #FFFFFF;
+  position: fixed;
+  z-index: 10;
+  width: 50%;
+  left: -50%;
+  top: 1rem;
+  transition: all 0.5s;
+}
+
+.nav-menu a {
+  display: inline-block;
+  border-bottom: 2px solid grey;
+  background: #202022;
+  font-size: 4.4rem;
+  font-weight: 200;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FABA63;
+  width: 100%;
+  padding: 1.7rem;
+}
+
+input[type="checkbox"]:checked+.nav-menu {
+  left: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* NAV MENU END */
+
+.hero-text {
+  width: 50%;
+  color: white;
+  padding-top: 60%;
+}
+
+.about {
+  padding-top: 10%;
+  text-align: left;
+}
+
+.read-more {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;
+  color: white;
+  border: solid 1px #FABA63;
+  width: 50%;
+  margin: 15% auto;
+  padding: 3%;
+}
+
+.read-more a {
+  color: white;
+}
+
+
+.gallery-background {
+  width: 100%;
+  background: #201e21;
+}
+
+.gallery {
+  padding: 10% 0;
+  text-align: justify;
+}
+
+/* need to create space between images */
+.gallery picture {
+  display: inline-block;
+  width: calc((100% / 2) - 5px);
+  /* float: left; */
+  /* margin: 0 auto; */
+}
+
+.documents {
+  text-align: center;
+}
+
+.doc {
+  padding: 10%;
+}
+
+.documents i {
+  font-size: 5rem;
+  color: #FABA63;
+}
+
+/* padding on blog fixes margin issue with 'read-more' - why? */
+.blog {
+  background: #201e21;
+  /* padding-bottom: 1px; */
+}
+
+.footer nav {
+}
+
+.footer-menu {
+  /* display: inline-block; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-menu li {
+  width: calc((100% / 4) - 5%);
+  float: left;
+}
+
+
+
+@media (min-width: 525px) {
+  h1 {}
+}
+
+
+@media (min-width: 768px) {
+
+  /* FONTS */
+  nav ul {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 2.9rem;
+  }
+
+  /* Hero */
+  h1 {
+    font-size: 16.2rem;
+    line-height: 14.04rem;
+  }
+
+  /* Hero subheading - Jewelers */
+  h2 {
+    font-size: 4.5rem;
+    line-height: 4.6rem;
+  }
+
+  /* About - Handcrafted, Latest Collection */
+  h3 {
+    font-size: 5.1rem;
+  }
+
+  /* Documents - Catalogue, Events, Collaborations */
+  h4 {
+    font-size: 3.0rem;
+  }
+
+  /* Buttons - Read More */
+  h5 {
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+  }
+
+  /* Footer Headings - Stay Updated, Contact */
+  h6 {
+    font-size: 2.5rem;
+  }
+
+  /* body & paragraphs */
+  body {
+    font-size: 2.0rem;
+    line-height: 2.9rem;
+  }
+
+
+
+  /* hamburger is hidden */
+  nav label,
+  #hamburger {
+    display: none;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .nav-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    float: left;
+    width: calc(100%/4);
+  }
+
+  .nav-menu li {
+    list-style-type: none;
+  }
+}
