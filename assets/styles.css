@@ -342,6 +342,8 @@ h3 {
 h4 {
   font-family: 'Italiana', serif;
   font-size: 3.0rem;
+  text-transform: uppercase;
+  padding: 10%;
 }
 
 /* Buttons - Read More */
@@ -355,6 +357,9 @@ h5 {
 h6 {
   font-family: 'Italiana', serif;
   font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: none;
 }
 
 /* body & paragraphs */
@@ -504,11 +509,12 @@ input[type="checkbox"] {
 }
 
 .documents {
+  margin-top: 5%;
   text-align: center;
 }
 
 .doc {
-  padding: 10%;
+  padding: 5%;
 }
 
 .documents i {
@@ -522,21 +528,62 @@ input[type="checkbox"] {
   /* padding-bottom: 1px; */
 }
 
-.footer nav {
+.footer-menu li {
+  float: left;
+  padding-right: 20px;
+  /* width: calc(100% / 4); */
 }
 
-.footer-menu {
-  /* display: inline-block; */
-  margin: 0 auto;
+.footer-menu a {
+  text-transform: capitalize;
+}
+
+.subscribe {
   text-align: center;
 }
 
-.footer-menu li {
-  width: calc((100% / 4) - 5%);
-  float: left;
+.subscribe h6 {
+  margin-top: 10%;
 }
 
+.subscribe p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
 
+.my-form {
+  margin: 2% 0;
+}
+
+.my-form input {
+  width: 100%;
+  text-align: center;
+  padding: 5%;
+}
+
+.submit {
+  display: block;
+  background: #201e21;
+  width: 100%;
+  padding: 5%;
+  font-family: 'Italiana', serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.contact {
+  text-align: center;
+  margin: 20% 0;
+}
+
+.copyright {
+  background: #201e21;
+  text-align: center;
+}
+
+.copyright p {
+  padding: 3%;
+}
 
 @media (min-width: 525px) {
   h1 {}
