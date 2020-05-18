@@ -363,7 +363,8 @@ h6 {
 }
 
 /* body & paragraphs */
-body, a {
+body,
+a {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 2.0rem;
@@ -395,8 +396,9 @@ body {
 
 .wrapper {
   width: 90%;
-  max-width: 525px;
+  max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 header {
@@ -408,47 +410,66 @@ header {
   background-image: url(./images/mobile-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center right;
   width: 100%;
   height: 100%;
   position: relative;
 }
 
 /* NAV BEGINNING */
-#hamburger {
+/* #hamburger {
   display: none;
-}
+} */
 
 nav label {
   color: white;
   font-size: 4rem;
   float: right;
-  padding: 5%;
+  padding: 5% 0;
+}
+
+nav label:hover,
+nav label:focus {
+color: #FABA63;
+cursor: pointer;
+}
+
+nav label:active {
+  position: relative;
+  top: 2px;
 }
 
 .nav-menu {
   display: block;
-  background: #FFFFFF;
-  position: fixed;
+  position: absolute;
   z-index: 10;
   width: 50%;
   left: -50%;
   top: 1rem;
   transition: all 0.5s;
+  text-align: left;
 }
+
+.nav-menu li {
+  /* margin: 10% 10% 5%; */
+  margin: 5% 10% 5%;
+}
+
 
 .nav-menu a {
   display: inline-block;
-  border-bottom: 2px solid grey;
-  background: #202022;
-  font-size: 4.4rem;
+  border-bottom: 2px solid transparent;
+  font-size: 2.4rem;
   font-weight: 200;
   text-decoration: none;
-  text-align: center;
   text-transform: capitalize;
   color: #FABA63;
-  width: 100%;
-  padding: 1.7rem;
+  /* padding: 0 1rem 1rem; */
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+  border-bottom: 2px solid grey;
 }
 
 input[type="checkbox"]:checked+.nav-menu {
@@ -462,10 +483,15 @@ input[type="checkbox"] {
 /* NAV MENU END */
 
 .hero-text {
-  width: 50%;
+  width: 60%;
   color: white;
-  padding-top: 60%;
+  padding-top: 38rem;
 }
+
+.social-icons {
+  display: none;
+}
+
 
 .about {
   padding-top: 10%;
@@ -497,15 +523,12 @@ input[type="checkbox"] {
 
 .gallery {
   padding: 10% 0;
-  text-align: justify;
+  text-align: center;
 }
 
-/* need to create space between images */
 .gallery picture {
   display: inline-block;
   width: calc((100% / 2) - 5px);
-  /* float: left; */
-  /* margin: 0 auto; */
 }
 
 .documents {
@@ -585,15 +608,38 @@ input[type="checkbox"] {
   padding: 3%;
 }
 
-@media (min-width: 525px) {
-  h1 {}
+@media (min-width: 485px) {
+
+  .nav-menu a {
+    font-size: 3.4rem;
+  }
+
+  .hero-text {
+    width: 45%;
+    padding-top: 25rem;
+  }
+}
+
+
+@media (min-width: 640px) {
+
+  h1 {
+    font-size: 8.8rem;
+    margin-left: 5%;
+    line-height: 7.5rem;
+
+  }
+
+  h2 {
+    font-size: 3.0rem;
+  }
 }
 
 
 @media (min-width: 768px) {
 
   /* FONTS */
-  nav ul {
+  .nav-menu a {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 2.0rem;
@@ -638,30 +684,53 @@ input[type="checkbox"] {
     font-size: 2.0rem;
     line-height: 2.9rem;
   }
-
-
-
+ 
   /* hamburger is hidden */
-  nav label,
-  #hamburger {
-    display: none;
-  }
-
-  .wrapper {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-  }
+    nav label,
+    #hamburger {
+      display: none;
+    }
 
   .nav-menu {
-    position: absolute;
+    width: 100%;
+    position: relative;
     left: 0;
-    top: 0;
-    float: left;
-    width: calc(100%/4);
   }
 
-  .nav-menu li {
-    list-style-type: none;
+  .nav-menu li {  
+    float: left;
+    margin: 1%;
   }
+
+  .hero-container {
+    background-image: url(./images/desktop-header.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+  }
+
+  .hero-text {
+    width: 70%;
+    padding-top: 16rem;
+  }
+
+  .social-icons {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+    text-align: center;
+  }
+
+  .social-icons i {
+    padding-bottom: 2rem;
+  }
+
+
+  .gallery picture {
+    width: calc((100% / 3) - 5px);
+  }
+
 }
